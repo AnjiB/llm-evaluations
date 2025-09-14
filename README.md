@@ -130,7 +130,7 @@ poetry run python test_phi3_setup.py
 
 ## 📚 Examples Overview
 
-### 1. Built-in Evaluators (`builtin_evaluators.py`)
+### 1. Built-in Evaluators
 
 Demonstrates how to use OpenEvals' built-in evaluators:
 
@@ -159,7 +159,7 @@ print(f"Score: {result['score']}")
 print(f"Comment: {result['comment']}")
 ```
 
-### 2. Custom Evaluators (`custom_evaluators.py`)
+### 2. Custom Evaluators
 
 Shows how to create custom evaluators for specific needs with 6 different evaluation metrics:
 
@@ -202,7 +202,7 @@ sentiment_evaluator = create_llm_as_judge(
 )
 ```
 
-### 3. Comprehensive Evaluation Suite (`comprehensive_evaluation_suite.py`)
+### 3. Comprehensive Evaluation Suite
 
 A complete evaluation pipeline that combines multiple evaluators:
 
@@ -228,7 +228,7 @@ result = evaluator.evaluate_comprehensive(
 print(f"Overall Score: {result['overall_score']:.2f}")
 ```
 
-### 4. LangSmith Integration (`langsmith_integration.py`)
+### 4. LangSmith Integration
 
 Demonstrates integration with LangSmith for tracking and monitoring:
 
@@ -265,7 +265,7 @@ def test_conciseness():
     )
 ```
 
-### 5. Local LLM with Ollama (`phi3_ollama_test.py`, `phi3_real_test.py`, `ollama_client.py`)
+### 5. Local LLM with Ollama
 
 Demonstrates evaluation using local LLM models without requiring OpenAI API keys:
 
@@ -409,19 +409,6 @@ evaluator = create_llm_as_judge(
 - Use LangSmith for experiment tracking
 - Continuously improve evaluation prompts
 
-## 🚨 Common Issues and Solutions
-
-### Issue: Evaluation Timeout
-**Solution**: Use faster models or implement timeout handling
-
-### Issue: Inconsistent Scores
-**Solution**: Use few-shot examples or adjust prompt clarity
-
-### Issue: High API Costs
-**Solution**: Use cheaper models for evaluation or implement caching
-
-### Issue: False Positives/Negatives
-**Solution**: Refine prompts and add more context
 
 ## 📈 Performance Tips
 
@@ -455,18 +442,6 @@ This project demonstrates excellent practices for LLM evaluation:
 - **Multi-dimensional**: Each evaluator provides detailed reasoning and scoring
 - **Batch Processing**: Support for evaluating multiple samples efficiently
 
-## 🤝 Contributing
-
-Feel free to contribute by:
-- Adding new evaluation metrics
-- Improving existing examples
-- Fixing bugs or issues
-- Adding documentation
-- Enhancing local LLM support
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -474,51 +449,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [LangSmith](https://smith.langchain.com/) for experiment tracking
 - [LangChain](https://github.com/langchain-ai/langchain) for the underlying infrastructure
 
-## 📋 Additional Files
-
-### Setup and Testing
-- **`test_phi3_setup.py`**: Comprehensive setup verification for Ollama and Phi3
-- **`run_examples.py`**: Command-line tool to run all examples with options
-- **`PHI3_SETUP_GUIDE.md`**: Detailed guide for setting up local LLM evaluation
-
-### Results and Documentation
-- **`phi3_evaluation_results.json`**: Sample evaluation results from Phi3 testing
-- **`MEDIUM_ARTICLE_SUMMARY.md`**: Comprehensive overview for Medium article content
-- **`profanity_evaluator.py`**: Additional safety evaluator for content filtering
-
-### Configuration
-- **`pyproject.toml`**: Poetry configuration with all dependencies
-- **`openevals/`**: Cloned OpenEvals framework (third-party, do not modify)
-
-## 🛠️ Development Tools
-
-### Example Runner
-The `run_examples.py` script provides a convenient way to run examples:
-
-```bash
-# List available examples
-python run_examples.py --list
-
-# Check environment setup
-python run_examples.py --check-env
-
-# Run specific example
-python run_examples.py builtin_evaluators
-
-# Run all examples
-python run_examples.py
-```
-
-### Setup Verification
-Before running examples, verify your setup:
-
-```bash
-# For OpenAI-based examples
-python run_examples.py --check-env
-
-# For local LLM examples
-python test_phi3_setup.py
-```
 
 ## 📚 Additional Resources
 

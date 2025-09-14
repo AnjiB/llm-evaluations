@@ -1,0 +1,57 @@
+[
+  {
+    "test_number": 1,
+    "category": "Geography",
+    "question": "What is the capital of France?",
+    "phi3_response": "The capital of France is Paris. It'in located in the north-central part of the country and serves as a major European city known for its art, fashion, gastronomy, and culture. The City of Light was founded by the Seine River\u2019s crossings where it now rests at coordinates approximately 48\u00b051\u2032N 2\u00b020\u2032E in \u00cele-de-France region. With over millions of residents and countless landmarks like Eiffel Tower, Louvre Museum among others, Paris holds a significant place as one of the most visited cities globally by tourists each year.",
+    "reference_answer": "Paris",
+    "correctness_score": false,
+    "hallucination_score": null,
+    "correctness_reasoning": "The output provided correctly identifies Paris as the capital of France and offers supplementary information about its location, cultural significance, landmarks like Eiffel Tower and Louvre Museum. The details regarding coordinates enhance understanding but are not essential for label accuracy.",
+    "hallucination_reasoning": "'reference_outputs'"
+  },
+  {
+    "test_number": 2,
+    "category": "Mathematics",
+    "question": "What is 15 + 27?",
+    "phi3_response": "The sum of 15 and 27 is 42.",
+    "reference_answer": "42",
+    "correctness_score": false,
+    "hallucination_score": null,
+    "correctness_reasoning": "The output provides a complete and accurate answer, addressing all parts of the question directly. It avoids any ambiguity or misleading information by presenting only the sum as requested.",
+    "hallucination_reasoning": "'reference_outputs'"
+  },
+  {
+    "test_number": 3,
+    "category": "Literature",
+    "question": "Who wrote Romeo and Juliet?",
+    "phi3_response": "William Shakespeare wrote \"Romeo and Juliet.\" This tragic play is one of the most famous works in English literature, first performed around 1594. It tells the story of two young star-crossed lovers whose deaths ultimately reconcile their feuding families.",
+    "reference_answer": "William Shakespeare",
+    "correctness_score": false,
+    "hallucination_score": null,
+    "correctness_reasoning": "\nThe output provided directly answers the question by identifying William Shakespeare as the author, which aligns with historical facts. The additional information included about when and why it was written is supplementary but does not detract from factual accuracy or completeness of answering who wrote Romeo and Juliet.",
+    "hallucination_reasoning": "'reference_outputs'"
+  },
+  {
+    "test_number": 4,
+    "category": "Astronomy",
+    "question": "What is the largest planet in our solar system?",
+    "phi3_response": "The largest planet in our solar system is Jupiter. It'self, it has a diameter of about 143,000 kilometers (89,274 miles) at its cloud tops and an equatorial radius of approximately 71,492 km (44,454 mi). For context, this makes Jupiter over twice as large in diameter compared to the next largest planet, Saturn.",
+    "reference_answer": "Jupiter",
+    "correctness_score": false,
+    "hallucination_score": null,
+    "correctness_reasoning": "The output provides factual information about Jupiter, including its size and comparison with Saturn. It mentions specific measurements that demonstrate accuracy in presenting the largest planet's attributes.",
+    "hallucination_reasoning": "'reference_outputs'"
+  },
+  {
+    "test_number": 5,
+    "category": "Biology",
+    "question": "Explain photosynthesis in simple terms.",
+    "phi3_response": "Photosynthesis is the process plants use to make their own food. They take sunlight, water from the soil, and carbon dioxide from the air, mix them together using a green pigment called chlorophyll (found mostly in leaves), and produce glucose, which is sugar that gives energy for growth and development. Oxygen gets released as a byproduct of this process into the atmosphere \u2013 something we all need to breathe!",
+    "reference_answer": "Photosynthesis is the process by which plants use sunlight, water, and carbon dioxide to produce glucose and oxygen.",
+    "correctness_score": true,
+    "hallucination_score": null,
+    "correctness_reasoning": "The output provided a clear explanation of photosynthesis in simple terms that accurately included the key elements: light energy (sunlight), raw materials (water from soil, carbon dioxide from air) and products formed during this process (glucose for food/energy storage & oxygen as byproduct). While it used more detail than necessary \u2013 such as explaining 'green pigment' called chlorophyll - the overall explanation is factually accurate without misleading or ambiguous statements. It also correctly uses relevant terminology and maintains logical consistency throughout.",
+    "hallucination_reasoning": "'reference_outputs'"
+  }
+]
